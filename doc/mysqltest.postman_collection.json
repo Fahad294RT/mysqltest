@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "a884ee91-d02b-402e-8763-cb4a68455e25",
+		"name": "mysqltest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"JS node tut1\",\n    \"description\": \"Some desc1\"\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/tutorials/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"JS node tut\",\n    \"description\": \"Some desc\"\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/tutorials"
+			},
+			"response": []
+		},
+		{
+			"name": "Show",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/api/tutorials/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/tutorials/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/tutorials?title=node",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tutorials"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "node"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
